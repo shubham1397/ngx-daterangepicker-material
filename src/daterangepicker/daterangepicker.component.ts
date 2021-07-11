@@ -728,6 +728,8 @@ export class DaterangepickerComponent implements OnInit {
     }
 
     clickApply(e?) {
+              console.log("xxx");
+
         if (!this.singleDatePicker && this.startDate && !this.endDate) {
             this.endDate = this._getDateWithTime(this.startDate, SideEnum.right);
 
